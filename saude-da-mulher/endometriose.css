@@ -1,0 +1,191 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo img {
+    max-width: 150px;
+    /* Ajuste o tamanho do logo conforme necessário */
+}
+
+header {
+    text-align: center;
+    background-color: #f4f4f4;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.banner img {
+    max-width: 250px;
+}
+
+.banner_home {
+    max-width: 1140px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    /* Para garantir que nada saia do contêiner */
+    margin: auto;
+}
+
+.banner_img {
+    width: 100%;
+    height: auto;
+}
+
+.banner_img img {
+    width: 100%;
+    height: auto;
+    /* Para manter a proporção da imagem */
+    display: block;
+    /* Remove o espaço em branco abaixo da imagem */
+}
+
+.banner_text {
+    position: absolute;
+    top: 50%;
+    /* Centraliza verticalmente */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta a posição para o centro */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo opaco com 50% de opacidade */
+    color: white;
+    /* Cor do texto */
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #333;
+    justify-content: space-around;
+    max-width: 1140px;
+    margin: auto;
+}
+
+nav ul li {
+    position: relative;
+    padding: 15px;
+    color: #ffff;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #ffff;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    flex-direction: column;
+    z-index: 1000;
+    /* Adicione isso */
+}
+
+nav ul li:hover>ul {
+    display: flex;
+}
+
+nav ul ul li {
+    padding: 10px;
+    color: white;
+}
+
+nav ul ul li:hover {
+    background-color: #666;
+}
+
+/* Seções */
+.intro {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1 {
+    color: #007BFF;
+    /* Cor do título */
+}
+
+.intro h2,
+.intro h3 {
+    color: #0056b3;
+    /* Cor dos subtítulos */
+}
+
+/* Galeria */
+.gallery {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery h2 {
+    color: #007BFF;
+    /* Cor do título da galeria */
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007BFF;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos de Vídeo */
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
