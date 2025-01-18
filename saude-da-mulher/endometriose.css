@@ -11,51 +11,12 @@ body {
 header {
     text-align: center;
     background-color: #f4f4f4;
-    max-width: 1140px;
-    margin: auto;
 }
 
 .banner img {
     max-width: 100%;
     height: auto;
 }
-
-.logo img {
-    max-width: 150px;
-    /* Ajuste o tamanho do logo conforme necessário */
-}
-
-header {
-    text-align: center;
-    background-color: #f4f4f4;
-    max-width: 1140px;
-    margin: auto;
-}
-
-
-.banner_home {
-    max-width: 1140px;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-    /* Para garantir que nada saia do contêiner */
-    margin: auto;
-}
-
-.banner_img {
-    width: 100%;
-    height: auto;
-}
-
-.banner_img img {
-    width: 100%;
-    height: auto;
-    /* Para manter a proporção da imagem */
-    display: block;
-    /* Remove o espaço em branco abaixo da imagem */
-}
-
-
 
 nav ul {
     list-style: none;
@@ -64,25 +25,16 @@ nav ul {
     display: flex;
     background-color: #333;
     justify-content: space-around;
-    max-width: 1140px;
-    margin: auto;
 }
 
 nav ul li {
     position: relative;
     padding: 15px;
-    color: #ffff;
-    cursor: pointer;
 }
 
 nav ul li a {
     text-decoration: none;
-    /* Remove o sublinhado */
-    color: #ffff;
-}
-
-nav ul li:hover {
-    background-color: #555;
+    color: #fff;
 }
 
 nav ul ul {
@@ -92,24 +44,12 @@ nav ul ul {
     left: 0;
     background-color: #444;
     flex-direction: column;
-    z-index: 1000;
-    /* Adicione isso */
 }
 
 nav ul li:hover>ul {
     display: flex;
 }
 
-nav ul ul li {
-    padding: 10px;
-    color: white;
-}
-
-nav ul ul li:hover {
-    background-color: #666;
-}
-
-/* Seções */
 .intro {
     padding: 20px;
     background-color: #fff;
@@ -118,18 +58,6 @@ nav ul ul li:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.intro h1 {
-    color: #007BFF;
-    /* Cor do título */
-}
-
-.intro h2,
-.intro h3 {
-    color: #0056b3;
-    /* Cor dos subtítulos */
-}
-
-/* Galeria */
 .gallery {
     padding: 20px;
     background-color: #fff;
@@ -138,35 +66,9 @@ nav ul ul li:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.gallery h2 {
-    color: #007BFF;
-    /* Cor do título da galeria */
-}
-
-.category {
-    margin-bottom: 20px;
-}
-
-.category img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Rodapé */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     background-color: #007BFF;
     color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Estilos de Vídeo */
-video {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
 }
