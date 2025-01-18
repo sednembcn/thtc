@@ -8,11 +8,11 @@ body {
     color: #333;
 }
 
-/* Cabeçalho */
 header {
     text-align: center;
-    background-color: #fff;
-    padding: 20px 0;
+    background-color: #f4f4f4;
+    max-width: 1140px;
+    margin: auto;
 }
 
 .banner img {
@@ -58,23 +58,7 @@ header {
     /* Remove o espaço em branco abaixo da imagem */
 }
 
-.banner_text {
-    position: absolute;
-    top: 50%;
-    /* Centraliza verticalmente */
-    left: 50%;
-    /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%);
-    /* Ajusta a posição para o centro */
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Fundo opaco com 50% de opacidade */
-    color: white;
-    /* Cor do texto */
-    padding: 20px;
-    /* Espaçamento interno */
-    text-align: center;
-    /* Centraliza o texto */
-}
+
 
 nav ul {
     list-style: none;
