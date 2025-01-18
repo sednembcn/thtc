@@ -16,7 +16,7 @@ header {
 }
 
 header .banner img {
-    max-width: 200px;
+    max-width: 250px;
     height: auto;
 }
 
@@ -57,7 +57,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #004080;
+    background: #ffffff;
 }
 
 nav ul li ul {
