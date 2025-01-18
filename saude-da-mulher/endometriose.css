@@ -1,39 +1,46 @@
-/* Estilos Gerais */
+/* Estilo global */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    line-height: 1.6;
     color: #333;
+    background-color: #f9f9f9;
 }
 
+/* Cabeçalho e banner */
 header {
-    background-color: #f4f4f4;
+    background-color: #004080;
+    padding: 20px 10px;
     text-align: center;
-    padding: 20px 0;
 }
 
-.banner img {
+header .banner img {
     max-width: 200px;
-    display: block;
-    margin: auto;
+    height: auto;
 }
 
-.banner-home img {
+.banner-home {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner_img img {
     max-width: 100%;
-    display: block;
-    margin: auto;
+    height: auto;
 }
 
+/* Menu de navegação */
 nav {
-    background-color: #333;
+    background: #0066cc;
+    color: #fff;
+    padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -43,46 +50,93 @@ nav ul li {
 }
 
 nav ul li a {
-    display: block;
-    padding: 15px 20px;
     color: #fff;
     text-decoration: none;
-}
-
-nav ul li:hover>ul {
+    padding: 10px 15px;
     display: block;
 }
 
-nav ul ul {
+nav ul li a:hover {
+    background: #004080;
+}
+
+nav ul li ul {
     display: none;
     position: absolute;
-    background-color: #444;
-    top: 100%;
-    left: 0;
+    background: #004080;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-nav ul ul li {
-    width: 200px;
+nav ul li:hover ul {
+    display: block;
 }
 
-nav ul ul li a {
+nav ul li ul li a {
     padding: 10px 15px;
+    white-space: nowrap;
 }
 
-.intro,
+/* Conteúdo principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main .intro {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+main .protocol {
+    padding: 20px;
+}
+
+main .recommendations {
+    padding: 20px;
+}
+
+/* Galeria de vídeos e imagens */
 .gallery {
     padding: 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.gallery .category {
+    margin-bottom: 20px;
+}
+
+.gallery h3 {
+    margin-bottom: 10px;
+    color: #004080;
+}
+
+.gallery video {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Rodapé */
 footer {
-    background-color: #007BFF;
-    color: white;
     text-align: center;
+    background: #004080;
+    color: #fff;
     padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
 }
