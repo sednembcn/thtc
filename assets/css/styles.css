@@ -70,8 +70,13 @@ nav ul {
 nav ul li {
     position: relative;
     padding: 15px;
-    color: white;
+    color: #ffff;
     cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* Remove o sublinhado */
 }
 
 nav ul li:hover {
