@@ -1,0 +1,121 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #f4f4f4;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.banner img {
+    max-width: 250px;
+}
+
+.banner_home {
+    max-width: 1140px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    /* Para garantir que nada saia do contêiner */
+    margin: auto;
+}
+
+.banner_img {
+    width: 100%;
+    height: auto;
+}
+
+.banner_img img {
+    width: 100%;
+    height: auto;
+    /* Para manter a proporção da imagem */
+    display: block;
+    /* Remove o espaço em branco abaixo da imagem */
+}
+
+.banner_text {
+    position: absolute;
+    top: 50%;
+    /* Centraliza verticalmente */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta a posição para o centro */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo opaco com 50% de opacidade */
+    color: white;
+    /* Cor do texto */
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #333;
+    justify-content: space-around;
+    max-width: 1140px;
+    margin: auto;
+}
+
+nav ul li {
+    position: relative;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    flex-direction: column;
+    z-index: 1000;
+    /* Adicione isso */
+}
+
+nav ul li:hover>ul {
+    display: flex;
+}
+
+nav ul ul li {
+    padding: 10px;
+    color: white;
+}
+
+nav ul ul li:hover {
+    background-color: #666;
+}
+
+.intro h2 {
+    text-align: center;
+}
+
+.intro,
+.gallery {
+    padding: 20px;
+    max-width: 1140px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
