@@ -22,6 +22,7 @@ header {
     background-color: #ffffff;
     padding: 20px 10px;
     text-align: center;
+
 }
 
 header .banner img {
@@ -46,7 +47,7 @@ header .banner img {
     /* Centraliza verticalmente */
     left: 50%;
     /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%);
+    transform: translate(-182%, -50%);
     /* Ajusta a posição para o centro */
     background-color: rgba(0, 0, 0, 0.5);
     /* Fundo opaco com 50% de opacidade */
