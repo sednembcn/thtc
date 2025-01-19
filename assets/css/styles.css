@@ -30,7 +30,10 @@ header .banner img {
     height: auto;
 }
 
-
+.banner-home {
+    text-align: center;
+    padding: 20px 0;
+}
 
 .banner_img img {
     max-width: 100%;
