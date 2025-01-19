@@ -64,10 +64,7 @@ header .banner img {
     margin: 20px 0;
 }
 
-.banner_img img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 .intro h2 {
     text-align: center;
