@@ -67,6 +67,55 @@ header {
     text-align: center;
 }
 
+/* Menu de navegação */
+nav {
+    background: #0066cc;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #ffffff;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background: #004080;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+
 /* Conteúdo principal */
 main {
     max-width: 1200px;
