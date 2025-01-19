@@ -24,6 +24,11 @@ header {
     text-align: center;
 }
 
+header .banner img {
+    max-width: 250px;
+    height: auto;
+}
+
 .banner-home {
     text-align: center;
     margin: 20px 0;
