@@ -30,10 +30,7 @@ header .banner img {
     height: auto;
 }
 
-.banner-home {
-    text-align: center;
-    margin: 20px 0;
-}
+
 
 .banner_img img {
     max-width: 100%;
@@ -43,7 +40,7 @@ header .banner img {
 
 .banner_text {
     position: absolute;
-    top: 182%;
+    top: 157%;
     /* Centraliza verticalmente */
     left: 50%;
     /* Centraliza horizontalmente */
