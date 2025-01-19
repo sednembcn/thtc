@@ -43,7 +43,7 @@ header .banner img {
 
 .banner_text {
     position: absolute;
-    top: 155%;
+    top: 50%;
     /* Centraliza verticalmente */
     left: 50%;
     /* Centraliza horizontalmente */
