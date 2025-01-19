@@ -30,8 +30,8 @@ header .banner img {
     height: auto;
 }
 
-.banner-home {
-    text-align: center !important;
+.banner_home {
+    text-align: center;
     padding: 20px 0;
 }
 
