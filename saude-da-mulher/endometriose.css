@@ -8,6 +8,16 @@ body {
     background-color: #f9f9f9;
 }
 
+h1,
+h2 {
+    text-align: center;
+}
+
+section.intro {
+    margin: 20px;
+    line-height: 1.8;
+}
+
 /* Cabeçalho e banner */
 header {
     background-color: #ffffff;
