@@ -89,7 +89,7 @@ nav ul li ul {
     /* Oculta os submenus por padrão */
     position: absolute;
     /* Para que eles apareçam abaixo do item pai */
-    background: #004080;
+    background: #0066cc;
     /* Cor de fundo do submenu */
     list-style: none;
     padding: 0;
@@ -203,8 +203,8 @@ footer p {
 }
 
 .menu ul li a {
-    font-size: 18px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 5px;
 }
 
 /* Estilos do menu hambúrguer */
