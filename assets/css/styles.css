@@ -178,7 +178,7 @@ footer p {
 
 /* Menu Hambúrguer */
 .menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
     background-color: #004080;
@@ -193,7 +193,7 @@ footer p {
 }
 
 .menu.active {
-    display: flex;
+    display: block;
 }
 
 .menu ul li {
@@ -241,7 +241,7 @@ footer p {
     }
 
     .menu.active {
-        display: flex;
+        display: block;
         /* Exibe o menu quando ativo */
     }
 
