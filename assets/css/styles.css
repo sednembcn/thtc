@@ -231,7 +231,6 @@ footer p {
         flex-direction: column;
         width: 100%;
         background-color: #004080;
-        position: absolute;
         top: 80px;
         /* Ajuste conforme necessário */
         left: 0;
@@ -240,7 +239,7 @@ footer p {
     }
 
     .menu.active {
-        display: block;
+        display: none;
         /* Exibe o menu quando ativo */
     }
 
