@@ -13,16 +13,17 @@ h2 {
     text-align: center;
 }
 
+/* Seções */
 section.intro {
     margin: 20px;
     line-height: 1.8;
 }
 
+/* Cabeçalho */
 header {
     background-color: #ffffff;
     padding: 20px 10px;
     text-align: center;
-
 }
 
 header .banner img {
@@ -40,33 +41,15 @@ header .banner img {
     height: auto;
 }
 
-
+/* Texto do Banner */
 .banner_text {
     position: absolute;
     top: 100%;
-    /* Centraliza verticalmente */
     left: 50%;
-    /* Centraliza horizontalmente */
     transform: translate(-50%, -50%);
-    /* Ajusta a posição para o centro */
     background-color: rgba(0, 0, 0, 0.5);
-    /* Fundo opaco com 50% de opacidade */
     color: white;
-    /* Cor do texto */
     padding: 20px;
-    /* Espaçamento interno */
-    text-align: center;
-    /* Centraliza o texto */
-}
-
-.banner-home {
-    text-align: center;
-    margin: 20px 0;
-}
-
-
-
-.intro h2 {
     text-align: center;
 }
 
@@ -118,7 +101,6 @@ nav ul li ul li a {
     white-space: nowrap;
 }
 
-
 /* Conteúdo principal */
 main {
     max-width: 1200px;
@@ -134,10 +116,7 @@ main .intro {
     border-bottom: 1px solid #ddd;
 }
 
-main .protocol {
-    padding: 20px;
-}
-
+main .protocol,
 main .recommendations {
     padding: 20px;
 }
@@ -156,17 +135,11 @@ main .recommendations {
     color: #004080;
 }
 
-.gallery video {
+.gallery video,
+.gallery img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
-}
-
-.gallery img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px auto;
-    display: block;
 }
 
 /* Rodapé */
@@ -182,6 +155,7 @@ footer p {
     margin: 0;
 }
 
+/* Menu Hambúrguer */
 .menu {
     display: none;
     flex-direction: column;
@@ -274,6 +248,8 @@ footer p {
     }
 }
 
+/* Banner Text */
 .banner_text {
     display: none;
+    /* Certifique-se de que isso esteja correto */
 }
