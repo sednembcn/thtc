@@ -44,7 +44,7 @@ header .banner img {
     position: absolute;
     top: 100%;
     /* Centraliza verticalmente */
-    left: 50%;
+    left: 60%;
     /* Centraliza horizontalmente */
     transform: translate(-50%, -50%);
     /* Ajusta a posição para o centro */
