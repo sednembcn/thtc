@@ -182,6 +182,37 @@ footer p {
     margin: 0;
 }
 
+.menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f4f4f4;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.menu ul {
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu.active {
+    display: flex;
+}
+
+.menu ul li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu ul li a {
+    font-size: 18px;
+    padding: 10px;
+}
+
 /* Estilos do menu hambúrguer */
 .menu-toggle {
     display: none;
@@ -197,25 +228,35 @@ footer p {
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: block;
+        /* Mostra o botão do menu */
     }
 
     .menu {
         display: none;
+        /* Oculta o menu por padrão */
         flex-direction: column;
         width: 100%;
         background-color: #f4f4f4;
         position: absolute;
         top: 60px;
+        /* Ajuste conforme necessário */
         left: 0;
+        z-index: 1000;
+        /* Para garantir que o menu fique acima de outros elementos */
+    }
+
+    .menu.active {
+        display: flex;
+        /* Exibe o menu quando ativo */
     }
 
     .menu ul {
         flex-direction: column;
         width: 100%;
-    }
-
-    .menu.active {
-        display: flex;
+        padding: 0;
+        /* Remove o padding */
+        margin: 0;
+        /* Remove a margem */
     }
 
     .menu ul li {
@@ -228,6 +269,8 @@ footer p {
     .menu ul li a {
         font-size: 18px;
         padding: 10px;
+        display: block;
+        /* Garante que o link ocupe toda a área do item */
     }
 }
 
