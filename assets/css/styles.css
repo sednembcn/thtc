@@ -178,7 +178,7 @@ footer p {
 
 /* Menu Hambúrguer */
 .menu {
-    display: none;
+
     flex-direction: column;
     width: 100%;
     background-color: #004080;
