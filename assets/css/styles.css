@@ -227,7 +227,7 @@ footer p {
     }
 
     .menu {
-        display: block;
+        display: none;
         /* Oculta o menu por padrão */
         flex-direction: column;
         width: 100%;
