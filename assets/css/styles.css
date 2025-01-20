@@ -83,23 +83,44 @@ nav ul li a:hover {
     background: #5098d3a8;
 }
 
+/* Submenu */
 nav ul li ul {
     display: none;
+    /* Oculta os submenus por padrão */
     position: absolute;
+    /* Para que eles apareçam abaixo do item pai */
     background: #004080;
+    /* Cor de fundo do submenu */
     list-style: none;
     padding: 0;
     margin: 0;
+    z-index: 1000;
+    /* Para garantir que o submenu fique acima de outros elementos */
 }
 
-nav ul li:hover ul {
+/* Comportamento do submenu ao clicar */
+nav ul li a {
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
+}
+
+/* Exibe o submenu ao clicar */
+nav ul li.active>ul {
     display: block;
+    /* Exibe o submenu quando a classe 'active' está presente */
 }
 
-nav ul li ul li a {
-    padding: 10px 15px;
-    white-space: nowrap;
+nav ul li ul li {
+    width: 100%;
+    /* Garante que o submenu ocupe toda a largura */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    padding: 10px;
+    /* Espaçamento interno */
+    line-height: 1.5;
+    /* Aumenta o espaço entre os itens do submenu */
 }
+
 
 /* Conteúdo principal */
 main {

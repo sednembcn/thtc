@@ -280,10 +280,25 @@
     </footer>
 
     <script>
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            menu.classList.toggle("active");
-        }
+        document.querySelectorAll('nav ul li > a').forEach(item => {
+            item.addEventListener('click', function (event) {
+                // Previne o comportamento padrão do link
+                event.preventDefault();
+
+                // Fecha outros submenus
+                document.querySelectorAll('nav ul li').forEach(li => {
+                    if (li !== this.parentElement) {
+                        li.classList.remove('active');
+                    }
+                });
+
+                // Alterna a classe 'active' para o submenu atual
+                const submenu = this.nextElementSibling;
+                if (submenu) {
+                    this.parentElement.classList.toggle('active');
+                }
+            });
+        });
     </script>
 
 </body>
