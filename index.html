@@ -280,6 +280,12 @@
     </footer>
 
     <script>
+        function toggleMenu() {
+            var menu = document.querySelector('nav ul');
+            menu.classList.toggle('active'); // Alterna a classe 'active' para mostrar/ocultar o menu
+        }
+
+        // Adiciona evento de clique para os links do menu
         document.querySelectorAll('nav ul li > a').forEach(item => {
             item.addEventListener('click', function (event) {
                 // Previne o comportamento padrão do link

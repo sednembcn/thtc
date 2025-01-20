@@ -267,6 +267,22 @@ footer p {
         display: block;
         /* Garante que o link ocupe toda a área do item */
     }
+
+    nav ul {
+        flex-direction: column;
+        /* Muda a direção para coluna em dispositivos móveis */
+    }
+
+    nav ul li {
+        width: 100%;
+        /* Garante que os itens do menu ocupem toda a largura */
+    }
+
+    nav ul li ul {
+        position: static;
+        /* Muda a posição para que o submenu fique abaixo do item pai */
+    }
+
 }
 
 /* Banner Text */
