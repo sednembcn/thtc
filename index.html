@@ -15,7 +15,10 @@
         </div>
     </header>
 
-    <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+
+
+    <nav class="menu">
         <ul>
             <li><a href="https://sednembcn.github.io/thtc/">Home</a></li>
             <li><a href="https://sednembcn.github.io/thtc/saude-da-mulher.html">Saúde da Mulher</a>
@@ -40,14 +43,14 @@
             </li>
             <li><a href="https://sednembcn.github.io/thtc/saude-mental.html">Saude Mental</a>
                 <ul>
-                    <li><a href="https://sednembcn.github.io/saude-mental/tdh.html">TDH</a></li>
-                    <li><a href="https://sednembcn.github.io/thtc/autista.html">Autista</a></li>
+                    <li><a href="https://sednembcn.github.io/saude-mental/tdah.html">TDAH</a></li>
+                    <li><a href="https://sednembcn.github.io/thtc/autista.html">Autismo</a></li>
 
                 </ul>
             </li>
-            <li><a href="https://sednembcn.github.io/thtc/saude-digestiva.html">Saude Disgestiva</a>
+            <li><a href="https://sednembcn.github.io/thtc/saude-digestiva.html">Saude Digestiva</a>
                 <ul>
-                    <li><a href="https://sednembcn.github.io/saude-digestiva/estomago.html">Estomago</a></li>
+                    <li><a href="https://sednembcn.github.io/saude-digestiva/estomago.html">Estômago</a></li>
                     <li><a href="https://sednembcn.github.io/saude-digestiva/intestino.html">Intestino</a></li>
                     <li><a href="https://sednembcn.github.io/saude-digestiva/rins.html">Rins</a></li>
 
@@ -59,7 +62,7 @@
                             Periférica</a>
                     </li>
 
-                    <li><a href="https://sednembcn.github.io/thtc/condicoes-neurologicas/spr.html">Sind. Pessoa
+                    <li><a href="https://sednembcn.github.io/thtc/condicoes-neurologicas/spr.html">Síndrome da Pessoa
                             Rigida</a></li>
                 </ul>
             </li>
@@ -275,6 +278,14 @@
     <footer>
         <p>© 2025 Terapia THTC. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
 </body>
 
 </html>

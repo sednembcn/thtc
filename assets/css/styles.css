@@ -181,3 +181,52 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Estilos do menu hambúrguer */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Estilo do menu para telas menores */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f4f4f4;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu ul li a {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
