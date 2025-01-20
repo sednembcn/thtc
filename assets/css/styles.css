@@ -231,31 +231,6 @@ footer p {
     }
 }
 
-@media (max-width: 600px) {
-    .banner_text {
-        padding: 10px;
-        /* Reduz o padding */
-        font-size: 14px;
-        /* Ajusta o tamanho da fonte */
-    }
-}
-
-/* Estilos para tablets */
-@media (min-width: 601px) and (max-width: 900px) {
-    .banner_text {
-        padding: 15px;
-        /* Ajusta o padding para tablets */
-        font-size: 16px;
-        /* Ajusta o tamanho da fonte para tablets */
-    }
-}
-
-/* Estilos para telas maiores */
-@media (min-width: 901px) {
-    .banner_text {
-        padding: 20px;
-        /* Mantém o padding original */
-        font-size: 18px;
-        /* Tamanho da fonte para telas maiores */
-    }
+.banner_text {
+    display: none;
 }
