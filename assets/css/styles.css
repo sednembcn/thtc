@@ -222,12 +222,12 @@ footer p {
 /* Estilo do menu para telas menores */
 @media screen and (max-width: 768px) {
     .menu-toggle {
-        display: block;
+        display: none;
         /* Mostra o botão do menu */
     }
 
     .menu {
-        display: none;
+        display: block;
         /* Oculta o menu por padrão */
         flex-direction: column;
         width: 100%;
