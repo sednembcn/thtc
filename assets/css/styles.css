@@ -193,7 +193,7 @@ footer p {
 }
 
 .menu.active {
-    display: block;
+    display: flex;
 }
 
 .menu ul li {
