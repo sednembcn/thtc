@@ -48,7 +48,7 @@ header .banner img {
     /* Centraliza horizontalmente */
     transform: translate(-50%, -50%);
     /* Ajusta a posição para o centro */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(11 40 54 / 50%);
     /* Fundo opaco com 50% de opacidade */
     color: white;
     /* Cor do texto */
