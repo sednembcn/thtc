@@ -178,7 +178,7 @@ footer p {
 
 /* Menu Hambúrguer */
 .menu {
-    display: none;
+
     flex-direction: column;
     width: 100%;
     background-color: #004080;
@@ -222,7 +222,7 @@ footer p {
 /* Estilo do menu para telas menores */
 @media screen and (max-width: 768px) {
     .menu-toggle {
-        display: none;
+        display: block;
         /* Mostra o botão do menu */
     }
 
@@ -233,7 +233,7 @@ footer p {
         width: 100%;
         background-color: #004080;
         position: absolute;
-        top: 60px;
+        top: 80px;
         /* Ajuste conforme necessário */
         left: 0;
         z-index: 1000;
