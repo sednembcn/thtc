@@ -153,6 +153,42 @@
     <footer>
         <p>© 2025 Terapia THTC. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        // Garante que o menu comece oculto ao carregar a página
+        document.addEventListener("DOMContentLoaded", function () {
+            var menu = document.querySelector('.menu');
+            menu.classList.remove('active'); // Garante que o menu esteja oculto ao carregar a página
+        });
+
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('active'); // Alterna a classe 'active' para mostrar/ocultar o menu
+        }
+
+        // Adiciona evento de clique para os links do menu
+        document.querySelectorAll('nav ul li > a').forEach(item => {
+            item.addEventListener('click', function (event) {
+                // Verifica se o link tem um submenu associado
+                const submenu = this.nextElementSibling;
+
+                if (submenu && submenu.tagName === 'UL') {
+                    // Previne o comportamento padrão apenas para links com submenu
+                    event.preventDefault();
+
+                    // Fecha outros submenus
+                    document.querySelectorAll('nav ul li').forEach(li => {
+                        if (li !== this.parentElement) {
+                            li.classList.remove('active');
+                        }
+                    });
+
+                    // Alterna a classe 'active' para o submenu atual
+                    this.parentElement.classList.toggle('active');
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
