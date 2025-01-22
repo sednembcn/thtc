@@ -1,0 +1,292 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+/* Seções */
+section.intro {
+    margin: 20px;
+    line-height: 1.8;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header .banner img {
+    max-width: 250px;
+    height: auto;
+}
+
+.banner-home {
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.banner_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Texto do Banner */
+.banner_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(11 40 54 / 50%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 10;
+}
+
+/* Menu de navegação */
+nav {
+    background: #0066cc;
+    color: #fff;
+    padding: 0px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #5098d3a8;
+}
+
+/* Submenu */
+nav ul li ul {
+    display: none;
+    /* Oculta os submenus por padrão */
+    position: absolute;
+    /* Para que eles apareçam abaixo do item pai */
+    background: #0066cc;
+    /* Cor de fundo do submenu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    /* Para garantir que o submenu fique acima de outros elementos */
+}
+
+/* Comportamento do submenu ao clicar */
+nav ul li a {
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
+}
+
+/* Exibe o submenu ao clicar */
+nav ul li.active>ul {
+    display: block;
+    /* Exibe o submenu quando a classe 'active' está presente */
+}
+
+nav ul li ul li {
+    width: 100%;
+    /* Garante que o submenu ocupe toda a largura */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    padding: 10px;
+    /* Espaçamento interno */
+    line-height: 1.5;
+    /* Aumenta o espaço entre os itens do submenu */
+}
+
+
+/* Conteúdo principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main .intro {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+main .protocol,
+main .recommendations {
+    padding: 20px;
+}
+
+/* Galeria de vídeos e imagens */
+.gallery {
+    padding: 20px;
+}
+
+.gallery .category {
+    margin-bottom: 20px;
+}
+
+.gallery h3 {
+    margin-bottom: 10px;
+    color: #004080;
+}
+
+.gallery video,
+.gallery img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background: #004080;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Menu Hambúrguer */
+.menu {
+
+    flex-direction: column;
+    width: 100%;
+    background-color: #0066cc;
+    top: 60px;
+    left: 0;
+}
+
+.menu ul {
+    flex-direction: row;
+    width: 100%;
+}
+
+.menu.active {
+    display: none;
+}
+
+.menu ul li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu ul li a {
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* Estilos do menu hambúrguer */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Estilo do menu para telas menores */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        /* Mostra o botão do menu */
+    }
+
+    .menu {
+        display: block;
+        /* Oculta o menu por padrão */
+        flex-direction: column;
+        width: 100%;
+        background-color: #004080;
+        top: 80px;
+        /* Ajuste conforme necessário */
+        left: 0;
+        z-index: 1000;
+        /* Para garantir que o menu fique acima de outros elementos */
+    }
+
+    .menu.active {
+        display: none;
+        /* Exibe o menu quando ativo */
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        /* Remove o padding */
+        margin: 0;
+        /* Remove a margem */
+    }
+
+    .menu ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu ul li a {
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+        /* Garante que o link ocupe toda a área do item */
+    }
+
+    nav ul {
+        flex-direction: column;
+        /* Muda a direção para coluna em dispositivos móveis */
+    }
+
+    nav ul li {
+        width: 100%;
+        /* Garante que os itens do menu ocupem toda a largura */
+    }
+
+    nav ul li ul {
+        position: static;
+        /* Muda a posição para que o submenu fique abaixo do item pai */
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #banner-intro {
+        display: none;
+    }
+}
