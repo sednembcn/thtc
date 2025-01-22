@@ -193,6 +193,12 @@
         <p>© 2025 Aurículoterapia & THTC. Todos os direitos reservados.</p>
     </footer>
     <script>
+        // Garante que o menu comece oculto ao carregar a página
+        document.addEventListener("DOMContentLoaded", function () {
+            var menu = document.querySelector('.menu');
+            menu.classList.remove('active'); // Garante que o menu esteja oculto ao carregar a página
+        });
+
         function toggleMenu() {
             var menu = document.querySelector('.menu');
             menu.classList.toggle('active'); // Alterna a classe 'active' para mostrar/ocultar o menu
