@@ -283,8 +283,8 @@ footer p {
 
 }
 
-/* Banner Text */
-.banner_text {
-    display: none;
-    /* Certifique-se de que isso esteja correto */
+@media screen and (max-width: 768px) {
+    #banner-intro {
+        display: none;
+    }
 }
