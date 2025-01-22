@@ -31,7 +31,7 @@ header .banner img {
     height: auto;
 }
 
-.banner-home {
+.banner_home {
     position: relative;
     text-align: center;
     padding: 20px 0;
@@ -48,11 +48,10 @@ header .banner img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(11 40 54 / 50%);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 20px;
     text-align: center;
-    z-index: 10;
 }
 
 /* Menu de navegação */
